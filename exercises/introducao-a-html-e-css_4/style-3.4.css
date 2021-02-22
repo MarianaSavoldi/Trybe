@@ -1,0 +1,24 @@
+body {
+    background-color: paleturquoise;
+}
+
+.titulo {
+    padding-top: 20px;
+    color: navy;
+}
+
+.cabecalho {
+    text-align: center;
+    margin-top: 15px;
+    background-color: dodgerblue;
+    height: 80px;
+}
+
+#pag-inic {
+    font-family: monospace;
+}
+
+.links-nav li {
+    display: inline-block;
+    padding: 15px 30px;
+}
