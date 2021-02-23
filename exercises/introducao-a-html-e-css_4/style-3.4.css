@@ -31,6 +31,7 @@ body {
 
 #pag-inic {
     font-family: monospace;
+    display: inline-block;
 }
 
 #pag-inic h1 {
@@ -48,4 +49,18 @@ body {
 
 .curiosity h4 {
     text-decoration: underline;
+}
+
+.curiosity img {
+    float: right;
+}
+
+.visao {
+    max-width: 40%;
+    margin: 10px;
+}
+
+.soco {
+    max-width: 30%;
+    margin: 10px;
 }
