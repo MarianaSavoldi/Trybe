@@ -12,3 +12,8 @@ console.log(sub);
 //multiplicação
 let multi = a * b;
 console.log(multi);
+
+//divisão
+a = 10;
+let div = a / b;
+console.log(div);
