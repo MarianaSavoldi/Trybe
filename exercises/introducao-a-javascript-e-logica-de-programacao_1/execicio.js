@@ -17,3 +17,7 @@ console.log(multi);
 a = 10;
 let div = a / b;
 console.log(div);
+
+//módulo
+let mod = 10 % 5;
+console.log(mod);
