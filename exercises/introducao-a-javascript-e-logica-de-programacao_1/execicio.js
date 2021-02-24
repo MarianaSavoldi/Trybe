@@ -8,3 +8,7 @@ console.log(soma);
 //subtração
 let sub = a - b;
 console.log(sub);
+
+//multiplicação
+let multi = a * b;
+console.log(multi);
