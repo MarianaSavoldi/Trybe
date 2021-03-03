@@ -8,3 +8,5 @@
  Crie uma função que corrija o texto da tag <h1>.
  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.*/
+ document.getElementById("parag-teste").innerText = "Daqui 2 anos eu me vejo morando em outro país";
+ 
