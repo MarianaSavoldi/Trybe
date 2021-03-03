@@ -17,3 +17,5 @@ document.getElementsByClassName("main-content")[0].style.backgroundColor = "rgb(
 //exercício 3
 document.getElementsByClassName("center-content")[0].style.backgroundColor = "white";
 
+//exercício 4
+document.getElementsByClassName("title")[0].innerText = "Exercício 5.1 - JavaScript";
