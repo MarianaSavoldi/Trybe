@@ -22,3 +22,8 @@ pFilho.innerText = 'Parágrafo Filho da Div Filha';
 let divLeft = document.createElement('div');
 divMae.appendChild(divLeft);
 divLeft.className = 'left-content';
+
+//requisito 6
+let divRight = document.createElement('div');
+divMae.appendChild(divRight);
+divRight.className = 'right-content';
