@@ -17,3 +17,8 @@ divFilha.className = 'center-content';
 let pFilho = document.createElement('p');
 divFilha.appendChild(pFilho);
 pFilho.innerText = 'Parágrafo Filho da Div Filha';
+
+//requisito 5
+let divLeft = document.createElement('div');
+divMae.appendChild(divLeft);
+divLeft.className = 'left-content';
