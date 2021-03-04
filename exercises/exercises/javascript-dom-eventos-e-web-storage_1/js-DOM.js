@@ -19,3 +19,7 @@ document.getElementsByClassName("center-content")[0].style.backgroundColor = "wh
 
 //exercício 4
 document.getElementsByClassName("title")[0].innerText = "Exercício 5.1 - JavaScript";
+
+//exercício 5
+document.getElementsByTagName("p")[0].style.textTransform = "uppercase";
+
