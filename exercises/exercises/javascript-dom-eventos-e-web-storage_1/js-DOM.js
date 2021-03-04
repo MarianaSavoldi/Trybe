@@ -23,3 +23,6 @@ document.getElementsByClassName("title")[0].innerText = "Exercício 5.1 - JavaSc
 //exercício 5
 document.getElementsByTagName("p")[0].style.textTransform = "uppercase";
 
+//exercício 6
+let todos = document.querySelectorAll("p");
+console.log(todos);
