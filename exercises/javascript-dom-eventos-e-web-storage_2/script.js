@@ -27,3 +27,9 @@ divLeft.className = 'left-content';
 let divRight = document.createElement('div');
 divMae.appendChild(divRight);
 divRight.className = 'right-content';
+
+//requisito 7
+let imagem = document.createElement('img');
+imagem.className = 'small-image';
+imagem.src = 'https://picsum.photos/200';
+divLeft.appendChild(imagem);
