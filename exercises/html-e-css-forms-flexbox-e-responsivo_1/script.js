@@ -11,3 +11,30 @@ function criarOpcoes() {
   }
 }
 criarOpcoes()
+
+let submitButton = document.getElementById('submit');
+let inputAll = document.querySelectorAll('input');
+let curriculumContainer = document.getElementById('curriculum');
+let clearButton = document.getElementById('clear');
+
+submitButton.addEventListener('click', function(event) {
+  event.preventDefault();
+  for (let index = 0; index < inputAll.length; index += 1) {
+    if(inputAll.length > 0) {
+      let print = document.createElement('div');
+      print.className = 'item-print';
+      print.innerHTML = inputAll[index].value;
+      curriculumContainer.style.border = '1px solid black';
+      curriculumContainer.style.textAlign = 'justify';
+      curriculumContainer.style.padding = '15px';
+      curriculumContainer.appendChild(print); 
+    }
+  }
+});
+
+clearButton.addEventListener('click', function(event) {
+  event.preventDefault();
+  curriculumContainer.innerHTML = '';
+  curriculumContainer.style.border = 'none';
+  curriculumContainer.style.padding = 'none';
+});
