@@ -4,68 +4,71 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
+  <script src="./path/to/just-validate.min.js"></script>
   <title>Formulário Bloco 6</title>
 </head>
 <body>
-  <form action="" method="get">
+  <form action="" method="get" class="row g-3">
     <fieldset class="personal-info">
-      <legend>Informações Pessoais</legend>
-      <label for="name">Nome:
-        <input type="text" name="nome" id="name" placeholder="Nome Completo" maxlength="40" required>
+      <h2 class="card-title">Informações Pessoais</h2>
+      <label for="name" class="form-label">Nome:
+        <input type="text" name="nome" class="form-control" id="name" placeholder="Nome Completo" maxlength="40" required>
       </label>
       <br>
-      <label for="email">Email:
-        <input type="text" name="email" id="email" placeholder="example@email.com" maxlength="50" autocomplete="off" required>
+      <label for="email" class="form-label">Email:
+        <input type="text" name="email" class="form-control" id="email" placeholder="example@email.com" maxlength="50" autocomplete="off" required>
       </label>
       <br>
-      <label for="cpf">CPF:
-        <input type="text" name="cpf" id="cpf" placeholder="Somente os números" maxlength="11" required>
+      <label for="cpf" class="form-label">CPF:
+        <input type="text" name="cpf" class="form-control" id="cpf" placeholder="Somente os números" maxlength="11" required>
       </label>
       <br>
-      <label for="adress">Endereço:
-        <input type="text" name="end" id="adress" placeholder="Av; Rua; etc." maxlength="200" required>
+      <label for="adress" class="form-label">Endereço:
+        <input type="text" name="end" class="form-control" id="adress" placeholder="Av; Rua; etc." maxlength="200" required>
       </label>
       <br>
-      <label for="city">Cidade:
-        <input type="text" name="cidade" id="city" placeholder="Nome da cidade" maxlength="28" required>
+      <label for="city" class="form-label">Cidade:
+        <input type="text" name="cidade" class="form-control" id="city" placeholder="Nome da cidade" maxlength="28" required>
       </label>
       <br>
-      <label for="state">Estado:
-        <select name="estado" id="state" required>
+      <label for="state" class="form-label">Estado:
+        <select name="estado" class="form-select" id="state" required>
           <option value="sel" selected>Selecionar</option>
         </select>
       </label>
       <br>
-      <label for="type">Tipo:</label>
-      <input type="radio" name="tipo" id="type" checked>Casa
-      <input type="radio" name="tipo" id="type">Apartamento
+      <label for="type" class="form-check-label radio">Tipo:</label>
+      <input type="radio" name="tipo" class="form-check-input" id="type" checked>Casa
+      <input type="radio" name="tipo" class="form-check-input" id="type">Apartamento
     </fieldset>
     <fieldset class="curriculum-info">
-      <legend>Sobre meu último emprego</legend>
-      <label for="sobre">Conte mais sobre você:
+      <h2 class="card-title">Sobre meu último emprego</h2>
+      <label for="sobre" class="form-label">Conte mais sobre você:
         <br>
-        <textarea name="curriculum" id="sobre" cols="60" rows="5" placeholder="Escreva aqui um breve resumo sobre seu último emprego..." maxlength="1000"></textarea>
+        <textarea name="curriculum" class="form-control" id="sobre" cols="60" rows="5" placeholder="Escreva aqui um breve resumo sobre seu último emprego..." maxlength="1000" ></textarea>
       </label>
       <br>
-      <br>
-      <label for="job" class="job">Cargo:
+      <label for="job" class="job form-label">Cargo:
         <br>
-        <input type="text" name="cargo" id="job" placeholder="Insrira o cargo" maxlength="40" required>
+        <input type="text" name="cargo" class="form-control" id="job" placeholder="Insrira o cargo" maxlength="40" required>
       </label>
-      <label for="dscrpt">Descrição do Cargo:
-        <input type="text" name="descr" id="dscrpt" placeholder="Descreva sobre o cargo" maxlength="500" required>
+      <label for="dscrpt" class="form-label">Descrição do Cargo:
+        <input type="text" name="descr" class="form-control" id="dscrpt" placeholder="Descreva sobre o cargo" maxlength="500" required>
       </label>
       <br>
-      <label for="start-date">Data de Início:
-        <input type="date" name="inicio" id="start-date" required>
+      <label for="start-date" class="form-label">Data de Início:
+        <input type="date" name="inicio" class="form-control" id="start-date" required>
       </label>
     </fieldset>
     <div id="buttons-container">
-      <button type="submit" id="submit">Enviar</button>
-      <button type="reset" id="clear">Limpar</button>
+      <button type="submit" class="btn btn-success" id="submit">Enviar</button>
+      <button type="reset" class="btn btn-danger" id="clear">Limpar</button>
     </div>
   </form>
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <!-- <script src="bootstrap-5.0.0-beta2-dist/js/bootstrap.min.js"></script> -->
 </body>
 </html>
