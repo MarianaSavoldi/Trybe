@@ -1,25 +1,38 @@
 body {
   background-color: lightpink;
-  font-size: large;
+  font-size: medium;
   margin: 20px;
 }
+
 h1 {
-  font-size: xx-large;
-}
-h2 {
   font-size: x-large;
+  color: darkslateblue;
+}
+
+h2 {
+  font-size: larger;
+  color: darkblue;
+}
+
+p {
+  display: flex;
+  justify-content: center;
 }
 
 img {
   max-width: 100%;
   width: 250px;
   height: 250px;
+  border: 5px solid white;
+  border-radius: 10px;
 }
 
 div {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
 }
 
 figure {
@@ -28,11 +41,11 @@ figure {
 }
 
 /* max-width: 700px */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 860px) {
   body {
     background-color: lightblue;
     margin: 30px;
-    font-size: 20px;
+    font-size: large;
     max-width: 100%;
   }
 
@@ -43,18 +56,66 @@ figure {
 
   h1 {
     color:darkblue;
-    font-size: 2em;
+    font-size: xx-large;
   }
 
   h2 {
     color: darkslateblue;
-    font-size: 35px;
+    font-size: x-large;
   }
 
   div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 90%;
+  }
+
+  img {
+    max-width: 100%;
+    width: 300px;
+    height: 300px;
+  }
+
+  figure:nth-child(5) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1090px) {
+  body {
+    margin: 40px;
+    background-color: palegreen;
+    font-size: larger;
+    max-width: 100%;
+  }
+
+  p {
+    display: flex;
+    justify-content: center;
+  }
+
+  h1 {
+    color: blueviolet;
+    font-size: 38px;
+  }
+
+  h2 {
+    color: rebeccapurple;
+    font-size: xx-large;
+  }
+
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  img {
+    max-width: 100%;
+    width: 350px;
+    height: 350px;
   }
 
   figure:nth-child(5) {
