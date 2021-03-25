@@ -34,10 +34,11 @@ const lesson3 = {
 // console.log(objLength(lesson1));
 
 // requisito 4
-const obejectValue = (object) => {
-  const valores = Object.values(lesson1);
-  console.log(valores);
-}
+// const obejectValue = (object) => {
+//   const valores = Object.values(lesson1);
+//   console.log(valores);
+// }
 
-obejectValue();
+// obejectValue();
 
+// requisito 5
