@@ -19,17 +19,25 @@ const lesson3 = {
 };
 
 // requisito 1
-const addNewKey = (object, key, value) => {
-  object[key] = value;
-};
+// const addNewKey = (object, key, value) => {
+//   object[key] = value;
+// };
 
-addNewKey(lesson2, 'turno', 'noite');
+// addNewKey(lesson2, 'turno', 'noite');
 
 // requisito 2
-const listKeys = (object) =>  Object.keys(object);
-console.log(listKeys(lesson1));
+// const listKeys = (object) =>  Object.keys(object);
+// console.log(listKeys(lesson1));
 
 // requisito 3
-const objLength = (object) =>  Object.keys(object).length;
-console.log(objLength(lesson1));
+// const objLength = (object) =>  Object.keys(object).length;
+// console.log(objLength(lesson1));
+
+// requisito 4
+const obejectValue = (object) => {
+  const valores = Object.values(lesson1);
+  console.log(valores);
+}
+
+obejectValue();
 
