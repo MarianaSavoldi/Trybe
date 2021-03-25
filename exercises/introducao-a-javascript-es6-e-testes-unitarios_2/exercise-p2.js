@@ -29,3 +29,7 @@ addNewKey(lesson2, 'turno', 'noite');
 const listKeys = (object) =>  Object.keys(object);
 console.log(listKeys(lesson1));
 
+// requisito 3
+const objLength = (object) =>  Object.keys(object).length;
+console.log(objLength(lesson1));
+
