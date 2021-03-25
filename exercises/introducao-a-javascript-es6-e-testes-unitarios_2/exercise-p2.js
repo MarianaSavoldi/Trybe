@@ -18,8 +18,14 @@ const lesson3 = {
   turno: 'noite',
 };
 
+// requisito 1
 const addNewKey = (object, key, value) => {
   object[key] = value;
 };
 
 addNewKey(lesson2, 'turno', 'noite');
+
+// requisito 2
+const listKeys = (object) =>  Object.keys(object);
+console.log(listKeys(lesson1));
+
