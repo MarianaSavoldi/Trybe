@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Formulário Bloco 6</title>
+</head>
+<body>
+  <form action="" method="get">
+    <fieldset class="personal-info">
+      <legend>Informações Pessoais</legend>
+      <label for="name">Nome:
+        <input type="text" name="nome" id="name" placeholder="Nome Completo" maxlength="40" required>
+      </label>
+      <br>
+      <label for="email">Email:
+        <input type="text" name="email" id="email" placeholder="example@email.com" maxlength="50" autocomplete="off" required>
+      </label>
+      <br>
+      <label for="cpf">CPF:
+        <input type="text" name="cpf" id="cpf" placeholder="Somente os números" maxlength="11" required>
+      </label>
+      <br>
+      <label for="adress">Endereço:
+        <input type="text" name="end" id="adress" placeholder="Av; Rua; etc." maxlength="200" required>
+      </label>
+      <br>
+      <label for="city">Cidade:
+        <input type="text" name="cidade" id="city" placeholder="Nome da cidade" maxlength="28" required>
+      </label>
+      <br>
+      <label for="state">Estado:
+        <select name="estado" id="state" required>
+          <option value="sel" selected>Selecionar</option>
+        </select>
+      </label>
+      <br>
+      <label for="type">Tipo:</label>
+      <input type="radio" name="tipo" id="type" checked>Casa
+      <input type="radio" name="tipo" id="type">Apartamento
+    </fieldset>
+    <fieldset class="curriculum-info">
+      <legend>Sobre meu último emprego</legend>
+      <label for="sobre">Conte mais sobre você:
+        <br>
+        <textarea name="curriculum" id="sobre" cols="60" rows="5" placeholder="Escreva aqui um breve resumo sobre seu último emprego..." maxlength="1000"></textarea>
+      </label>
+      <br>
+      <br>
+      <label for="job" class="job">Cargo:
+        <br>
+        <input type="text" name="cargo" id="job" placeholder="Insrira o cargo" maxlength="40" required>
+      </label>
+      <label for="dscrpt">Descrição do Cargo:
+        <input type="text" name="descr" id="dscrpt" placeholder="Descreva sobre o cargo" maxlength="500" required>
+      </label>
+      <br>
+      <label for="start-date">Data de Início:
+        <input type="date" name="inicio" id="start-date" required>
+      </label>
+    </fieldset>
+    <div id="buttons-container">
+      <button type="submit" id="submit">Enviar</button>
+      <button type="reset" id="clear">Limpar</button>
+    </div>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
