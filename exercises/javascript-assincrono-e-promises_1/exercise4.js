@@ -17,3 +17,5 @@ const sendMarsTemperature = () => {
 
 
 sendMarsTemperature(); // imprime "Mars temperature is: 20 degree Celsius", por exemplo
+
+// FIZ POR CONTA PRÓPRIAAAAAAAA :D
