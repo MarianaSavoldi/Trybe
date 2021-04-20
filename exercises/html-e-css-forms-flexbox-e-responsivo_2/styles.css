@@ -1,0 +1,22 @@
+body {
+  padding: 20px;
+  background-color: rgba(231, 231, 231);
+}
+
+fieldset {
+  border: 1px solid rgb(116, 116, 116);
+  border-radius: 4px;
+  padding: 10px 10px;
+}
+
+textarea {
+  resize: none;
+}
+
+label {
+  width: 90%;
+}
+
+label.radio {
+  width: 50px;
+}
